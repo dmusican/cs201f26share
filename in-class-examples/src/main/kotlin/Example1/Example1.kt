@@ -1,7 +1,7 @@
 package Example1
 
 class Salary {
-    var annual: Double? = 0.0
+    var annual: Double? = null
 }
 
 fun main() {
