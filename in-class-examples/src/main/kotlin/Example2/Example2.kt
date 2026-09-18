@@ -3,7 +3,7 @@ package Example2
 class Salary(var annual: Double?) {
     //    var annual: Double? = null
     var daysOff = 0
-    
+
     constructor(annual: Double?, daysOff: Int): this(annual) {
         this.daysOff = daysOff
     }
