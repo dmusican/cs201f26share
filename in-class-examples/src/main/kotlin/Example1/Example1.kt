@@ -18,7 +18,7 @@ class Salary {
 
 fun main() {
     val pay = Salary()
-    pay.annual = 100.0
+//    pay.annual = 100.0
     println(pay.annual)
     pay.giveRaise(0.8)
 }
