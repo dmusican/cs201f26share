@@ -5,7 +5,7 @@ class Salary {
 
     fun giveRaise(percent: Double) {
         if (annual != null) {
-            annual = annual + annual * percent
+            annual = annual!! + annual!! * percent
         } else {
             // do nothing
         }
