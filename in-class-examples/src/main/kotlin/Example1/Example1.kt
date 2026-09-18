@@ -4,13 +4,20 @@ class Salary {
     var annual: Double? = null
 
     fun giveRaise(percent: Double) {
-        val annualCopy = annual
-        if (annualCopy != null) {
-            annual = annualCopy + annualCopy * percent
+        if (annual != null) {
+            annual = annual + annual * percent
         } else {
             // do nothing
         }
     }
+//    fun giveRaise(percent: Double) {
+//        val annualCopy = annual
+//        if (annualCopy != null) {
+//            annual = annualCopy + annualCopy * percent
+//        } else {
+//            // do nothing
+//        }
+//    }
 }
 
 fun main() {
