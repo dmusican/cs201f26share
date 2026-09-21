@@ -4,6 +4,7 @@ class Die(var sides: Int) {
 
     // Other arbitrary startup code
     init {
+        println("I am init!!!!! ???")
         // Die should always get set to a random value
         roll()
     }
@@ -13,12 +14,13 @@ class Die(var sides: Int) {
     fun roll() {
         showing = (1..sides).random()
     }
-    
+
     constructor(): this(6) {
         println("I am a constructor. Hear me roar.")
     }
 
     constructor(sides: Int, color: String): this(sides) {
+        println("I am a constructor with no parameters.")
         println("Color is $color, but this doesn't save it or anything")
         this.color = color
     }
