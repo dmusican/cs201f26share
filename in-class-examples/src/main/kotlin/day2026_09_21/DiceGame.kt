@@ -21,7 +21,7 @@ class Die(var sides: Int) {
 
     constructor(sides: Int, color: String): this(sides) {
         println("I am a constructor with no parameters.")
-        println("Color is $color, but this doesn't save it or anything")
+        println("Color is $color")
         this.color = color
     }
 }
