@@ -2,14 +2,25 @@ package day2026_09_21
 
 class Die(var sides: Int) {
 
+    // Other arbitrary startup code
+    init {
+        // Die should always get set to a random value
+        roll()
+    }
     var showing = 1
+    var color: String? = null
 
     fun roll() {
         showing = (1..sides).random()
     }
-
+    
     constructor(): this(6) {
         println("I am a constructor. Hear me roar.")
+    }
+
+    constructor(sides: Int, color: String): this(sides) {
+        println("Color is $color, but this doesn't save it or anything")
+        this.color = color
     }
 }
 
