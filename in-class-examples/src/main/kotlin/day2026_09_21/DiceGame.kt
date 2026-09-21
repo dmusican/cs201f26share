@@ -16,6 +16,8 @@ fun main() {
     die1.roll()
     println(die1.showing)
 
+    val die3 = Die()
+    
 //    val die2 = Die(12)
 //    println(die2.sides)
 }
