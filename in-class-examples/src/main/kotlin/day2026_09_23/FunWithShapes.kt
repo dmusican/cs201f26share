@@ -15,8 +15,11 @@ class Circle(var radius: Double) {
 fun main() {
     print("(r)ectangle or (c)ircle? ")
     val choice = readln()
-    val r = Rectangle(10.0, 10.0)
-    val c = Circle(35.0)
-    println(r.area())
-    println(c.area())
+    if (choice == "r") {
+        val r = Rectangle(10.0, 10.0)
+        println(r.area())
+    } else {
+        val c = Circle(35.0)
+        println(c.area())
+    }
 }
