@@ -14,6 +14,10 @@ class Circle(var radius: Double): Shape {
     override fun area(): Double {
         return Math.PI * radius * radius
     }
+
+    fun circumference(): Double {
+        return 2 * Math.PI * radius
+    }
 }
 
 fun main() {
@@ -24,6 +28,7 @@ fun main() {
         s = Rectangle(10.0, 10.0)
     } else {
         s = Circle(35.0)
+        println(s.circumference())
     }
     println(s.area())
 }
