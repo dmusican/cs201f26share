@@ -7,4 +7,8 @@ class ListStack<T>: StackADT<T> {
     override fun push(item: T) {
         items.add(item)
     }
+
+    override fun pop(): T {
+        return items.removeLast()
+    }
 }
