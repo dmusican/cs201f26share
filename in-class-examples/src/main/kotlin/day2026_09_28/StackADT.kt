@@ -6,6 +6,6 @@ interface StackADT<T> {
     fun push(item: T)
     fun pop(): T
 //    fun peek(): T
-//    fun isEmpty(): Boolean
+    fun isEmpty(): Boolean
 //    fun size(): Int
 }
