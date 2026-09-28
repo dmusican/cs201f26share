@@ -9,4 +9,8 @@ fun main() {
     println(myStack.pop())
     println(myStack.pop())
     //println(myStack.pop())
+
+    val yourStack = ListStack<Int>()
+    yourStack.push(3)
+    yourStack.push(5)
 }
