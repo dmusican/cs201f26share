@@ -4,4 +4,6 @@ fun main() {
     val myStack = ListStack<String>()
     myStack.push("hello")
     myStack.push("schiller")
+    println(myStack.pop())
+    println(myStack.pop())
 }
