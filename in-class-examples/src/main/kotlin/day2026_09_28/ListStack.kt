@@ -8,14 +8,14 @@ class ListStack<T>: StackADT<T> {
         return items.isEmpty()
     }
     override fun push(item: T) {
-        if (isEmpty()) {
-            throw NoSuchElementException(
-                "I'm sorry friend, your stack is empty.")
-        }
         items.add(item)
     }
 
     override fun pop(): T {
+        if (isEmpty()) {
+            throw NoSuchElementException(
+                "I'm sorry friend, your stack is empty.")
+        }
         return items.removeLast()
     }
 }
