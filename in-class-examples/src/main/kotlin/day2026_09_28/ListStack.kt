@@ -26,4 +26,8 @@ class ListStack<T>: StackADT<T> {
         }
      return items[items.count()-1]
     }
+
+    override fun size(): Int {
+        return items.count()
+    }
 }
