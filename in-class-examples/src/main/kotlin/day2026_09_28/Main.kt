@@ -6,4 +6,5 @@ fun main() {
     myStack.push("schiller")
     println(myStack.pop())
     println(myStack.pop())
+    println(myStack.pop())
 }
