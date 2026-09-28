@@ -18,4 +18,12 @@ class ListStack<T>: StackADT<T> {
         }
         return items.removeLast()
     }
+
+    override fun peek():
+    if (isEmpty()) {
+        throw NoSuchElementException(
+            "I'm sorry friend, your stack is empty.")
+    }
+    return items[items.count()-1]
+}
 }
