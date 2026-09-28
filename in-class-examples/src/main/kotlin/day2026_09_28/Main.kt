@@ -9,6 +9,8 @@ fun main() {
     println(myStack.pop())
     println(myStack.pop())
     //println(myStack.pop())
+    // private prevents from doing the following
+    //myStack.items[1] = "hey"
 
     val yourStack = ListStack<Int>()
     yourStack.push(3)
