@@ -22,7 +22,7 @@ class ListStack<T>: StackADT<T> {
     override fun peek(): T {
         if (isEmpty()) {
             throw NoSuchElementException(
-                "I'm sorry friend, your stack is empty.")
+                "I'm sorry friend, peeking is bad, your stack is empty.")
         }
      return items[items.count()-1]
     }
