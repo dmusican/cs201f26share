@@ -15,7 +15,7 @@ class ListQueue<T> {
 
     fun dequeue(): T {
         val removedItem = list[front]
-        front = front + 1
+        front = (front + 1) % list.count()
         return removedItem
     }
     fun peek(): T // looks
