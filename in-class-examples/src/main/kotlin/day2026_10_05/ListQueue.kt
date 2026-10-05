@@ -18,6 +18,7 @@ class ListQueue<T> {
         front = (front + 1) % list.count()
         return removedItem
     }
+    
     fun peek(): T // looks
     // at front
     fun isEmpty(): Boolean
