@@ -9,12 +9,7 @@ class ListQueue<T> {
     fun enqueue(item: T) {
         // If queue is not full, I want rear to go back to
         // location 0 if it is at the end of list
-        if (rear == list.count() - 1) {
-            rear = 0
-        }
-        else {
-            rear = rear + 1
-        }
+        rear = (rear + 1) % list.count()
         list[rear] = item
     }
 
