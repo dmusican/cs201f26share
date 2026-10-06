@@ -140,10 +140,13 @@ fun main() {
     q.dequeue()
     q.display()
 
+    q.enqueue(6)
+    q.display()
+
     q.dequeue()
     q.dequeue()
     q.dequeue()
 
-    q.enqueue(6)
+    q.enqueue(7)
     q.display()
 }
