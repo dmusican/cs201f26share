@@ -117,7 +117,8 @@ class CircularQueue<T>: QueueADT<T> {
             }
             println(items[i].toString())
             println("Rear index-> " + rear)
-            println("Size = ${size()}")
+            println("Queue size = ${size()}")
+            println("Size of underlying list = ${items.count()}")
         }
     }
 }
@@ -134,12 +135,11 @@ fun main() {
     q.enqueue(3)
     q.enqueue(4)
     q.enqueue(5)
-
     q.display()
 
     q.dequeue()
-
     q.display()
+
     q.dequeue()
     q.dequeue()
     q.dequeue()
