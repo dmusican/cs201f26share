@@ -75,6 +75,23 @@ class CircularQueue<T>: QueueADT<T> {
         return item
     }
 
+    override fun peek(): T {
+        if (isEmpty()) {
+            throw Exception("Queue is empty.")
+        }
+        return items[front]
+    }
+
+    override fun size(): Int {
+        if (isEmpty()) {
+            return 0
+        } else if (rear >= front){
+            return rear - front + 1
+        } else {
+            return rear + items.count() - front + 1
+        }
+    }
+
     override fun toString(): String {
         var result = ""
         var i = front
