@@ -117,6 +117,7 @@ class CircularQueue<T>: QueueADT<T> {
             }
             println(items[i].toString())
             println("Rear index-> " + rear)
+            println("Size = ${size()}")
         }
     }
 }
