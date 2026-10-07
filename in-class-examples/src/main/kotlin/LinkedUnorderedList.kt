@@ -22,6 +22,8 @@ class LinkedUnorderedList<T> {
             result = result + current.item.toString()
             current = current.next
         }
+        result = result + "]"
+        return result
     }
 }
 
