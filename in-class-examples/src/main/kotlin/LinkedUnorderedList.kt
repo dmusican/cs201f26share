@@ -20,7 +20,7 @@ class LinkedUnorderedList<T> {
         var current = head
         while (current != null) {
             result = result + current.item.toString()
-            current = current.next
+            current = current.next + " "
         }
         result = result + "]"
         return result
