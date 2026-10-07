@@ -12,7 +12,7 @@ class ArrayUnorderedList<T> {
     override fun toString(): String {
         var result = "["
         for (i in 0..<usedCount) {
-            result = array[i].toString() + " "
+            result = result + array[i].toString() + " "
         }
         result = result + "]"
         return result
