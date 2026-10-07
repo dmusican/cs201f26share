@@ -1,9 +1,7 @@
 class LinkedUnorderedList<T> {
-    private class Node<T>(
+    private data class Node<T>(
         var item: T,
-        var next: Node<T>?) {
-
-    }
+        var next: Node<T>?)
 
     fun tryme() {
         val thing = Node<String>("hi", null)
