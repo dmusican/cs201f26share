@@ -14,6 +14,15 @@ class LinkedUnorderedList<T> {
         val newNode = Node<T>(item, head)
         head = newNode
     }
+
+    override fun toString(): String {
+        var result = "["
+        var current = head
+        while (current != null) {
+            result = result + current.item.toString()
+            current = current.next
+        }
+    }
 }
 
 fun main() {
@@ -22,4 +31,5 @@ fun main() {
     myList.addFirst("hi")
     myList.addFirst("bye")
     myList.addFirst("schiller")
+    println(myList)
 }
