@@ -8,6 +8,15 @@ class ArrayUnorderedList<T> {
         }
         array[0] = item
     }
+
+    override fun toString() {
+        var result = "["
+        for (i in 0..<usedCount) {
+            result = array[i] + " "
+        }
+        result = result + "]"
+        return result
+    }
 }
 
 fun main() {
@@ -15,4 +24,5 @@ fun main() {
 //    println(myList.size())  // I should get 0
     println(myList.addFirst("hello"))
 //    println(myList.size())  // I should get 1
+    println(myList)
 }
