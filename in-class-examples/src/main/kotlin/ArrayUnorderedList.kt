@@ -9,7 +9,7 @@ class ArrayUnorderedList<T> {
         array[0] = item
     }
 
-    override fun toString() {
+    override fun toString(): String {
         var result = "["
         for (i in 0..<usedCount) {
             result = array[i] + " "
