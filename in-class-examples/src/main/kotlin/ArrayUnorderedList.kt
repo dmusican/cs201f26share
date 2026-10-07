@@ -2,7 +2,9 @@ class ArrayUnorderedList<T> {
     private var array = arrayOfNulls<Any>(10)
     private var usedCount = 0
 
-    
+    fun addFirst(item: T) {
+        array[0] = item
+    }
 }
 
 fun main() {
