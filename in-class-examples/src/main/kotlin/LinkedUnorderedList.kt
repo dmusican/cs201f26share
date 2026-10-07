@@ -19,8 +19,8 @@ class LinkedUnorderedList<T> {
         var result = "["
         var current = head
         while (current != null) {
-            result = result + current.item.toString()
-            current = current.next + " "
+            result = result + current.item.toString() + " "
+            current = current.next
         }
         result = result + "]"
         return result
