@@ -3,6 +3,10 @@ class ArrayUnorderedList<T> {
     private var usedCount = 0
 
     fun addFirst(item: T) {
+        if (usedCount == array.count()) { // the array is full {
+        // new array, twice as big, first half has old contents
+            array = array.copyOf(array.count() * 2)
+        }
         for (i in usedCount downTo 1) {
             array[i] = array[i-1]
         }
@@ -26,7 +30,7 @@ fun main() {
     myList.addFirst("hello")
     myList.addFirst("bye")
     myList.addFirst("schiller")
-    
+
     val numList = ArrayUnorderedList<Int>()
     for (i in 0..<1000) {
         numList.addFirst(i)
