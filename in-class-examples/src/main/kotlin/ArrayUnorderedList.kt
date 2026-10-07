@@ -23,7 +23,10 @@ class ArrayUnorderedList<T> {
 fun main() {
     val myList = ArrayUnorderedList<String>()
 //    println(myList.size())  // I should get 0
-    println(myList.addFirst("hello"))
+    myList.addFirst("hello")
+    myList.addFirst("bye")
+    myList.addFirst("schiller")
+
 //    println(myList.size())  // I should get 1
     println(myList)
 }
