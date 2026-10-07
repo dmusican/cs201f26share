@@ -7,6 +7,7 @@ class ArrayUnorderedList<T> {
             array[i] = array[i-1]
         }
         array[0] = item
+        usedCount++
     }
 
     override fun toString(): String {
