@@ -37,5 +37,5 @@ fun main() {
     }
 
 //    println(myList.size())  // I should get 1
-    println(myList)
+    println(numList)
 }
