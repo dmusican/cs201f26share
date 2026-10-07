@@ -26,6 +26,11 @@ fun main() {
     myList.addFirst("hello")
     myList.addFirst("bye")
     myList.addFirst("schiller")
+    
+    val numList = ArrayUnorderedList<Int>()
+    for (i in 0..<1000) {
+        numList.addFirst(i)
+    }
 
 //    println(myList.size())  // I should get 1
     println(myList)
