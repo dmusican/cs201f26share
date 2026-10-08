@@ -1,3 +1,5 @@
+package day2026_10_07
+
 class ArrayUnorderedList<T> {
     private var array = arrayOfNulls<Any>(10)
     private var usedCount = 0

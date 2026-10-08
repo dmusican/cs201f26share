@@ -1,3 +1,5 @@
+package day2026_10_07
+
 class LinkedUnorderedList<T> {
     private data class Node<T>(
         var item: T,
