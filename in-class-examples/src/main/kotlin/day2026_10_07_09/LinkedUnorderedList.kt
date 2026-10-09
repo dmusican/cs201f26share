@@ -7,6 +7,17 @@ class LinkedUnorderedList<T> {
 
     private var head: Node<T>? = null
 
+    fun get(position: Int): T {
+        if (position < 0) {
+            throw Exception("Negative position, how dare you!?")
+        }
+        var current = head
+        for (i in 0..<position) {
+            current = current.next
+        }
+        return current.item
+    }
+
     fun addFirst(item: T) {
         val newNode = Node<T>(item, head)
         head = newNode
@@ -41,4 +52,5 @@ fun main() {
     println(myList)
     myList.removeFirst()
     println(myList)
+    println("At loc 0: ${myList.get(0)}")
 }
