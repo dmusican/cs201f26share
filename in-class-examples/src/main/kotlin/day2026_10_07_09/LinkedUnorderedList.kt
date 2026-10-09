@@ -19,7 +19,10 @@ class LinkedUnorderedList<T> {
                 current = current.next
             }
         }
-        return current!!.item
+        if (current == null) {
+            throw Exception("List has no more items")
+        }
+        return current.item
     }
 
     fun addFirst(item: T) {
@@ -57,5 +60,5 @@ fun main() {
     myList.removeFirst()
     println(myList)
     println("At loc 0: ${myList.get(0)}")
-    println("At loc 8: ${myList.get(8)}")
+    println("At loc 2: ${myList.get(2)}")
 }
