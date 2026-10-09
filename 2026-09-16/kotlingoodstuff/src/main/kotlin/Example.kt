@@ -1,5 +1,5 @@
 fun main() {
-    println("Hello friends!")
+    println("Hello friends! How are you?")
 
     val x = 3
     println(x)
