@@ -19,6 +19,9 @@ class LinkedUnorderedList<T> {
                 current = current.next
             }
         }
+        if (current == null) {
+            throw Exception("List is empty")
+        }
         return current.item
     }
 
