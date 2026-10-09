@@ -87,6 +87,6 @@ fun main() {
     println(myList)
     println("At loc 0: ${myList.get(0)}")
 //    println("At loc 2: ${myList.get(2)}")
-    myList.removeAt(1)
+    myList.removeAt(2)
     println(myList)
 }
