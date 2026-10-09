@@ -39,6 +39,32 @@ class LinkedUnorderedList<T> {
         }
     }
 
+    fun removeAt(position: Int) {
+        if (position < 0) {
+            throw Exception("Negative position bad")
+        }
+
+        if (position == 0) {
+            removeFirst()
+        }
+
+        var current = head
+        for (i in 0..<position-1) {
+            if (current == null) {
+                throw Exception("pos too big")
+            }
+            current = current.next
+        }
+        if (current == null) {
+            throw Exception("no more items")
+        }
+        val followingItem = current.next
+        if (followingItem == null) {
+            throw Exception("no more items")
+        }
+        current.next = followingItem.next
+    }
+
     override fun toString(): String {
         var result = "["
         var current = head
@@ -57,8 +83,10 @@ fun main() {
     myList.addFirst("bye")
     myList.addFirst("schiller")
     println(myList)
-    myList.removeFirst()
+//    myList.removeFirst()
     println(myList)
     println("At loc 0: ${myList.get(0)}")
-    println("At loc 2: ${myList.get(2)}")
+//    println("At loc 2: ${myList.get(2)}")
+    myList.removeAt(1)
+    println(myList)
 }
