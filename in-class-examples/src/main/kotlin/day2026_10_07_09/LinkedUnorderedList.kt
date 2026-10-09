@@ -57,4 +57,5 @@ fun main() {
     myList.removeFirst()
     println(myList)
     println("At loc 0: ${myList.get(0)}")
+    println("At loc 8: ${myList.get(8)}")
 }
