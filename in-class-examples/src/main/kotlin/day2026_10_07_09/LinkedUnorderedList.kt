@@ -13,7 +13,11 @@ class LinkedUnorderedList<T> {
         }
         var current = head
         for (i in 0..<position) {
-            current = current.next
+            if (current == null) {
+                throw Exception("Position too big, wtf?")
+            } else {
+                current = current.next
+            }
         }
         return current.item
     }
