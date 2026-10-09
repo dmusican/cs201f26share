@@ -46,6 +46,7 @@ class LinkedUnorderedList<T> {
 
         if (position == 0) {
             removeFirst()
+            return
         }
 
         var current = head
