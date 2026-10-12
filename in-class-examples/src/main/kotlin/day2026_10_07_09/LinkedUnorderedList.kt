@@ -3,7 +3,7 @@ package day2026_10_07_09
 class LinkedUnorderedList<T> {
     private data class Node<T>(
         var item: T,
-        var next: Node<T>?)
+        var next: Node<T>? = null)
 
     private var head: Node<T>? = null
 
