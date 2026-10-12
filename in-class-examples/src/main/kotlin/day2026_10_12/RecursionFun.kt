@@ -19,5 +19,5 @@ fun sumup(nums: List<Int>): Int {
 
 fun main() {
     println(factorial(4))
-    println(sumup(listOf(10, 2, 3, 5)))
+    println(sumup(listOf(10)))
 }
