@@ -41,4 +41,10 @@ fun main() {
     q.enqueue("kylah")
     q.enqueue("bruce")
     println(q)
+
+    val qq = RQueue<Int>()
+    for (i in 0..<20) {
+        qq.enqueue(i)
+    }
+    println(qq)
 }
