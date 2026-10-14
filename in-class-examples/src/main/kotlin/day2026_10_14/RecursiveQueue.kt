@@ -18,6 +18,21 @@ class RQueue<T> {
             rear = value
         }
     }
+
+    override fun toString(): String {
+        if (front == null) {
+            return ""
+        } else if (rear == null) {
+            return "$front"
+        } else {
+            var result = "$front "
+            if (inside != null) {
+                result += inside.toString()
+            }
+            result += "$rear"
+            return result
+        }
+    }
 }
 
 fun main() {
@@ -25,4 +40,5 @@ fun main() {
     q.enqueue("alex")
     q.enqueue("kylah")
     q.enqueue("bruce")
+    println(q)
 }
