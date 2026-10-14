@@ -29,7 +29,7 @@ class RQueue<T> {
             if (inside != null) {
                 result += inside.toString()
             }
-            result += "$rear"
+            result += " $rear"
             return result
         }
     }
