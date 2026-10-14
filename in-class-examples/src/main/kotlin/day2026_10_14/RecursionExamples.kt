@@ -13,5 +13,5 @@ fun move(numDiscs: Int, start: Int, end: Int, temp: Int) {
 }
 
 fun main() {
-    move(3, 1, 3, 2)
+    move(4, 1, 3, 2)
 }
