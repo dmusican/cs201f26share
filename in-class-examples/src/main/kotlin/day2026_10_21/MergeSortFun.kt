@@ -40,37 +40,37 @@ fun <T: Comparable<T>> merge(list: MutableList<T>,
     while (left <= leftEnd && right <= rightEnd) {
         if (list[left] <= list[right]) {
 
-            tempList[cur] = __________________________________
+            tempList[cur] = list[left]
 
-            left = _____________________________________
+            left = left + 1
         } else {
 
-            tempList[cur] = _________________________________
+            tempList[cur] = list[right]
 
-            right = __________________________________________
+            right = right + 1
         }
-        cur = ________________________________________________
+        cur = cur + 1
     }
 
     // Finish copying other half that's (probably) not done.
 
-    while (_______________________________________) {     // first half
+    while (left <= leftEnd) {     // first half
 
-        tempList[cur] = ___________________________________
+        tempList[cur] = list[left]
         cur = cur + 1
         left = left + 1
     }
 
-    while (_______________________________________) {     // second half
+    while (right <= rightEnd) {     // second half
 
-        tempList[cur] = ______________________________________
+        tempList[cur] = list[right]
         cur = cur + 1
         right = right + 1
     }
 
     // Copy temp list over original
 
-    for (i in 0..< _________________________________________)
+    for (i in 0..< rightEnd - leftStart + 1)
 
-        __________________________________ = tempList[i]
+        list[leftStart + i] = tempList[i]
 }
