@@ -125,7 +125,7 @@ fun main() {
     println(list.subList(0, 100))
     println()
     println()
-    selectionsort(list)
+    mergesort(list)
 
     println();
     println();
