@@ -116,7 +116,7 @@ fun <T> shuffle(list: MutableList<T>) {
 }
 
 fun main() {
-    val size = 50000
+    val size = 100000
     val list = mutableListOf<Int>()
     for (i in 0..<size) {
         list.add(i)
