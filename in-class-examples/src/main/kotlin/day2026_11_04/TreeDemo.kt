@@ -13,6 +13,6 @@ fun main() {
     luisNode.leftChild = TreeNode("Adam")
     val carlNode = TreeNode("Carl")
     root.rightChild = carlNode
-    root.rightChild.leftChild = TreeNode("Kim")
-    root.rightChild.rightChild = TreeNode("Beth")
+    root.rightChild!!.leftChild = TreeNode("Kim")
+    root.rightChild!!.rightChild = TreeNode("Beth")
 }
