@@ -6,6 +6,16 @@ data class TreeNode<T>(var data: T,
                        var leftChild: TreeNode<T>? = null,
                        var rightChild: TreeNode<T>? = null)
 
+fun <T> displayTree(current: TreeNode<T>?) {
+    if (current == null) {
+        return
+    } else {
+        println(current.data)
+        displayTree(current.leftChild)
+        displayTree(current.rightChild)
+    }
+}
+
 fun main() {
     val root = TreeNode("Susan")
     val luisNode = TreeNode("Luis")
