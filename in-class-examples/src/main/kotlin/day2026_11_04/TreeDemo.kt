@@ -4,7 +4,6 @@ data class TreeNode<T>(var data: T,
                        var leftChild: TreeNode<T>? = null,
                        var rightChild: TreeNode<T>? = null)
 
-
-
-class TreeDemo {
+fun main() {
+    val root = 
 }
