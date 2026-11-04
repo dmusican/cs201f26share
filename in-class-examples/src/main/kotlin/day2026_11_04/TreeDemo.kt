@@ -25,4 +25,6 @@ fun main() {
     root.rightChild = carlNode
     root.rightChild!!.leftChild = TreeNode("Kim")
     root.rightChild!!.rightChild = TreeNode("Beth")
+
+    displayTree(root)
 }
