@@ -10,9 +10,9 @@ fun <T> displayTree(current: TreeNode<T>?, numSpaces: Int = 0) {
     if (current == null) {
         return
     } else {
-        displayTree(current.rightChild)
+        displayTree(current.rightChild, numSpaces + 2)
         println(" ".repeat(numSpaces) + current.data)
-        displayTree(current.leftChild)
+        displayTree(current.leftChild, numSpaces + 2)
     }
 }
 
@@ -26,5 +26,5 @@ fun main() {
     root.rightChild!!.leftChild = TreeNode("Kim")
     root.rightChild!!.rightChild = TreeNode("Beth")
 
-    displayTree(root, 3)
+    displayTree(root)
 }
