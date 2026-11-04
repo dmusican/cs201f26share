@@ -10,9 +10,9 @@ fun <T> displayTree(current: TreeNode<T>?) {
     if (current == null) {
         return
     } else {
+        displayTree(current.rightChild)
         println(current.data)
         displayTree(current.leftChild)
-        displayTree(current.rightChild)
     }
 }
 
