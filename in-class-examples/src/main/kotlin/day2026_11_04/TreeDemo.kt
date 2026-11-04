@@ -6,7 +6,7 @@ data class TreeNode<T>(var data: T,
                        var leftChild: TreeNode<T>? = null,
                        var rightChild: TreeNode<T>? = null)
 
-fun <T> displayTree(current: TreeNode<T>?) {
+fun <T> displayTree(current: TreeNode<T>?, numSpace: Int = 0) {
     if (current == null) {
         return
     } else {
