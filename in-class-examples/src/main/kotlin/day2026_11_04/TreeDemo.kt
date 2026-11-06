@@ -13,7 +13,6 @@ fun <T> displayTree(current: TreeNode<T>?, numSpaces: Int = 0) {
         displayTree(current.rightChild, numSpaces + 2)
         println(" ".repeat(numSpaces) + current.data)
         displayTree(current.leftChild, numSpaces + 2)
-        ver
     }
 }
 
