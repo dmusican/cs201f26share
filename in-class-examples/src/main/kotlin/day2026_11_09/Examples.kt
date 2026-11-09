@@ -27,6 +27,23 @@ class BSTSet<T: Comparable<T>> {
 
         return treeNode
     }
+
+    // Test to see if tree contains something
+    private fun containsInSubtree(item: T, treeNode: Node<T>?): Boolean {
+        if (treeNode == null) {
+            return false
+        } else if (item < treeNode.key) {
+            return containsInSubtree(item, treeNode.left)
+        } else if (item > treeNode.key) {
+            return containsInSubtree(item, treeNode.right)
+        } else {
+            return true
+        }
+    }
+
+    fun contains(item: T): Boolean {
+        return containsInSubtree(item, root)
+    }
 }
 
 fun main() {
@@ -35,4 +52,8 @@ fun main() {
     set.insert(8)
     set.insert(11)
     set.insert(38)
+    println(set.contains(15))
+    println(set.contains(38))
+    println(set.contains(97))
+
 }
