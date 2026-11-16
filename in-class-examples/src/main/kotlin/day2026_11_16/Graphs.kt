@@ -42,3 +42,32 @@ class Graph(var numVertices: Int) {
             }
         }
     }
+
+    fun breadthFirstDisplay(vertex: Int) {
+        var queue = ArrayDeque<Int>()
+        val visited = MutableList(numVertices) {false}
+
+        visited[vertex] = true
+        println("Visiting " + vertex)
+
+        queue.addLast(__________________________________)
+
+        while (!queue.isEmpty()) {
+
+            val currentVertex = queue.removeFirst()
+
+            for (next in 0..<numVertices) {
+
+                if (______________________________________________) {
+
+                    visited[_______________________________] = true
+                    println("Visiting " + next)
+
+                    queue.addLast(_________________________________)
+                }
+            }
+        }
+    }
+
+
+    
