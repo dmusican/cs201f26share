@@ -9,7 +9,7 @@ fun main() {
     graph.addEdge(5,2)
 
     println("Depth first:")
-    graph.depthFirstDisplay(1)
+    graph.breadthFirstDisplay(1)
 }
 
 class Graph(var numVertices: Int) {
