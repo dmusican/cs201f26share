@@ -28,16 +28,15 @@ class Graph(var numVertices: Int) {
 
     private fun depthFirstFromNode(vertex: Int, visited: MutableList<Boolean>) {
 
-        if (_____________________________) {
+        if (visited[vertex]) {
             return
         } else {
             visited[vertex] = true
             println("Visiting " + vertex)
             for (j in 0..<numVertices) {
 
-                if (___________________________________________) {
-
-                    depthFirstFromNode(_____________________, _______________________)
+                if (adjacencyMatrix[vertex][j]) {
+                    depthFirstFromNode(j, visited)
                 }
             }
         }
