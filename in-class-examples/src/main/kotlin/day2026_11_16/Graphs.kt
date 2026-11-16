@@ -90,7 +90,7 @@ class Graph(var numVertices: Int) {
             }
         }
 
-        
+
         if (currentVertex == endVertex) {
             println("Shortest path backwards from $startVertex to $endVertex: ")
             while (currentVertex != startVertex) {
