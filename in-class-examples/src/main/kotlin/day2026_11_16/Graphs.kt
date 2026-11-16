@@ -34,7 +34,6 @@ class Graph(var numVertices: Int) {
             visited[vertex] = true
             println("Visiting " + vertex)
             for (j in 0..<numVertices) {
-
                 if (adjacencyMatrix[vertex][j]) {
                     depthFirstFromNode(j, visited)
                 }
@@ -42,31 +41,27 @@ class Graph(var numVertices: Int) {
         }
     }
 
-//    fun breadthFirstDisplay(vertex: Int) {
-//        var queue = ArrayDeque<Int>()
-//        val visited = MutableList(numVertices) {false}
-//
-//        visited[vertex] = true
-//        println("Visiting " + vertex)
-//
-//        queue.addLast(__________________________________)
-//
-//        while (!queue.isEmpty()) {
-//
-//            val currentVertex = queue.removeFirst()
-//
-//            for (next in 0..<numVertices) {
-//
-//                if (______________________________________________) {
-//
-//                    visited[_______________________________] = true
-//                    println("Visiting " + next)
-//
-//                    queue.addLast(_________________________________)
-//                }
-//            }
-//        }
-//    }
+    fun breadthFirstDisplay(vertex: Int) {
+        var queue = ArrayDeque<Int>()
+        val visited = MutableList(numVertices) {false}
+
+        visited[vertex] = true
+        println("Visiting " + vertex)
+
+        queue.addLast(vertex)
+
+        while (!queue.isEmpty()) {
+            val currentVertex = queue.removeFirst()
+            for (next in 0..<numVertices) {
+
+                if (adjacencyMatrix[currentVertex][next] && !visited[next]) {
+                    visited[next] = true
+                    println("Visiting " + next)
+                    queue.addLast(next)
+                }
+            }
+        }
+    }
 //
 //
 //    fun printShortestPath(startVertex: Int, endVertex: Int) {
